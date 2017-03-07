@@ -21,7 +21,7 @@ ul {
   /*another property is flex-flow which takes the same values as flex direction and flex wrap*/
   /*this property is the same as the border shorthand property, you can put multiple values in one property for a shortcut*/
   /*justify-content property takes on 5 values: flex-start || flex-end || center || space-between || space-around */
-  /* this property is used similar to the text align property, it will position the container &its children along the axis you styled it on (row or column)*/
+  /* this property is used similar to the text align property, it will position the container &its children along the main-axis (row only)*/
   /*flex start will group the children at the start of the main axis, flex end will do the opposite (like float right or left), center will center the children alog the axis, space-between will create space between the children and sapce around will create the same amount of space around each child (like margin)*/
 
 li { /* now these items are the flex items and the ul which is the parent element becomes the flex container*/
