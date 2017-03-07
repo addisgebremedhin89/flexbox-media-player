@@ -49,6 +49,7 @@ li:nth-child(9) {
         flex-basis: 50px;
     }
 /*when using the property flex-basis you can use the values em px and percentage. be mindful that flex basis is set to auto as a default and that is why the flex items grow with the content in the box as opposed to wrapping, with this property you can create a fixed with in a flex item so the content wraps*/
+/*you also have the option to use shorthand css with flex property, it will be grow, shrink and basis so for example flex: 0 1 auto; */
 
 
 
