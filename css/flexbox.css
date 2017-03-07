@@ -51,5 +51,14 @@ li:nth-child(9) {
 /*when using the property flex-basis you can use the values em px and percentage. be mindful that flex basis is set to auto as a default and that is why the flex items grow with the content in the box as opposed to wrapping, with this property you can create a fixed with in a flex item so the content wraps*/
 /*you also have the option to use shorthand css with flex property, it will be grow, shrink and basis so for example flex: 0 1 auto; */
 
+li:nth-child(2) {
+  flex: 2 1 0;
+}
+
+li:nth-child(3) {
+  flex: 1 1 0;
+}
+/*so if two list children have the flex grow property to 1 and 2 then the one with value 2 will take up 2 tenths of block while the other takes 1 tenth, simple math*/
+
 
 
