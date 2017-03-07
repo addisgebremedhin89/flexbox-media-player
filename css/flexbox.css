@@ -25,9 +25,12 @@ ul {
   /*flex start will group the children at the start of the main axis, flex end will do the opposite (like float right or left), center will center the children alog the axis, space-between will create space between the children and sapce around will create the same amount of space around each child (like margin)*/
   /*similar to the justify content property, the align items property focuses on alignment on the cross -axis*/
   /*there are many values the align-items property takes, stretch (which fills up as much of the height of the child) flex-start, flex-end, center (all similar to justify-content), baseline, align-content (does the same as a wrap property for the cross-axis)*/
+  
 li { /* now these items are the flex items and the ul which is the parent element becomes the flex container*/
   width: 100px;
   height: 100px;
   background-color: #8cacea;
   margin: 8px;
 }
+
+/*like the flex container there are properties for styling the flex items individually instead of as a collective */
