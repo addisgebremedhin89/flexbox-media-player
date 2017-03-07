@@ -1,9 +1,27 @@
 
 ul {
   display: flex;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
 }
 
-li {
+/* items now will display inline/float */
+  /*many properties can now be applied for styling to this flex container*/
+  /*flex-direction: row || column || row-reverse || column-reverse;
+  let's you decide how the flex items are laid out. Either horizontally, vertically or reversed in both directions.
+  In flex world horizontal and vertical are actually main-axis (x) and cross-axis (y)*/
+  
+  /*the reason why we saw the ul go horizontally is because by default the property is set to main-axis (row)*/
+  /*to get items to stack vertically you would change the font-direction property to column (basically block)*/
+  /*default setting of flex box is to keep fitting children into row or column (as styled) even if you need to scroll to keep going to see the info*/
+  /*basically the flex-wrap property is set to nowrap automatically*/
+  /*flex-wrap takes on three values; wrap, nowrap wrap-reverse*/
+  /*now that we have set it to wrap we have told the container to break up into a new line when the width of the viewspace runs out*/
+  /*wrap-reverse does the same thing as wrap but backwards*/
+  /*another property is flex-flow which takes the same values as flex direction and flex wrap*/
+  /*this property is the same as the border shorthand property, you can put multiple values in one property for a shortcut*/
+
+li { /* now these items are the flex items and the ul which is the parent element becomes the flex container*/
   width: 100px;
   height: 100px;
   background-color: #8cacea;
