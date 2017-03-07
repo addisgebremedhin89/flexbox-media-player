@@ -37,14 +37,18 @@ li { /* now these items are the flex items and the ul which is the parent elemen
 /* other style options include flex grow and flex shrink*/
 /*flex grow property is off as a default, however if you add any value from 1 to any positive number the box will take up all the space of the block*/
 /*since the flex shrink is always set to 1 by default, it will always be responsive to the viewspace and shrink accordingly*/
- li:nth-child(1) {
+
+li:nth-child(1) {
         order: 1; /*give it a value higher than 0*/
     }
 
 /*similar to zindex you can use the order property to reorder list items without updating the html. So if you want the first list item to actually be the last you could make the order value of that flex item 1 higher than that of the other items*/
 /*the flex items are defaulted at value 0 for order*/
 
-
+li:nth-child(9) {
+        flex-basis: 50px;
+    }
+/*when using the property flex-basis you can use the values em px and percentage. be mindful that flex basis is set to auto as a default and that is why the flex items grow with the content in the box as opposed to wrapping, with this property you can create a fixed with in a flex item so the content wraps*/
 
 
 
