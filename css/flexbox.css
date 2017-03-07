@@ -60,5 +60,11 @@ li:nth-child(3) {
 }
 /*so if two list children have the flex grow property to 1 and 2 then the one with value 2 will take up 2 tenths of block while the other takes 1 tenth, simple math*/
 
+/*target first list item*/
+li:first-of-type {
+    align-self: center;
+}
+/* jus like the justify content or align content properties you can use the align self property to align individual items along the axis*/
+/*this property takes on the same values as justify content and align content*/
 
 
