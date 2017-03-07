@@ -34,3 +34,8 @@ li { /* now these items are the flex items and the ul which is the parent elemen
 }
 
 /*like the flex container there are properties for styling the flex items individually instead of as a collective */
+/*similar to zindex you can use the order property to reorder list items without updating the html. So if you want the first list item to actually be the last you could make the order value of that flex item 1 higher than that of the other items*/
+/*the flex items are defaulted at value 0 for order*/
+
+
+
