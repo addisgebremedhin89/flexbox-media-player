@@ -67,4 +67,8 @@ li:first-of-type {
 /* jus like the justify content or align content properties you can use the align self property to align individual items along the axis*/
 /*this property takes on the same values as justify content and align content*/
 
+/*ABSOLUTE AND RELATIVE FLEX*/
+/*absolute flex refers to fixed flex items that usually have a flex property with a value of 1 or higher*/
+/*relative flex refers to an automatic flex item that grows with its content*/
+
 
