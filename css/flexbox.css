@@ -26,7 +26,7 @@ ul {
   /*similar to the justify content property, the align items property focuses on alignment on the cross -axis*/
   /*there are many values the align-items property takes, stretch (which fills up as much of the height of the child) flex-start, flex-end, center (all similar to justify-content), baseline, align-content (does the same as a wrap property for the cross-axis)*/
   
-li { /* now these items are the flex items and the ul which is the parent element becomes the flex container*/
+.test-list li { /* now these items are the flex items and the ul which is the parent element becomes the flex container*/
   width: 100px;
   height: 100px;
   background-color: #8cacea;
@@ -38,30 +38,32 @@ li { /* now these items are the flex items and the ul which is the parent elemen
 /*flex grow property is off as a default, however if you add any value from 1 to any positive number the box will take up all the space of the block*/
 /*since the flex shrink is always set to 1 by default, it will always be responsive to the viewspace and shrink accordingly*/
 
-li:nth-child(1) {
+.test-list:nth-child(1) {
         order: 1; /*give it a value higher than 0*/
     }
 
 /*similar to zindex you can use the order property to reorder list items without updating the html. So if you want the first list item to actually be the last you could make the order value of that flex item 1 higher than that of the other items*/
 /*the flex items are defaulted at value 0 for order*/
 
-li:nth-child(9) {
+.test-list:nth-child(9) {
         flex-basis: 50px;
     }
 /*when using the property flex-basis you can use the values em px and percentage. be mindful that flex basis is set to auto as a default and that is why the flex items grow with the content in the box as opposed to wrapping, with this property you can create a fixed with in a flex item so the content wraps*/
 /*you also have the option to use shorthand css with flex property, it will be grow, shrink and basis so for example flex: 0 1 auto; */
 
-li:nth-child(2) {
+.test-list:nth-child(2) {
   flex: 2 1 0;
 }
 
-li:nth-child(3) {
+.test-list:nth-child(3) {
   flex: 1 1 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 /*so if two list children have the flex grow property to 1 and 2 then the one with value 2 will take up 2 tenths of block while the other takes 1 tenth, simple math*/
 
 /*target first list item*/
-li:first-of-type {
+.test-list:first-of-type {
     align-self: center;
 }
 /* jus like the justify content or align content properties you can use the align self property to align individual items along the axis*/
@@ -71,4 +73,16 @@ li:first-of-type {
 /*absolute flex refers to fixed flex items that usually have a flex property with a value of 1 or higher*/
 /*relative flex refers to an automatic flex item that grows with its content*/
 
+/*using margin auto on flex items is not advised, this is because it can disrupt the normal flow of positioning of nearby items, addiontally the justify content property is no longer usable*/
 
+.nav-list:nth-child(4) {
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.nav-list li {
+  width: 100px;
+  height: 100px;
+  background-color: #8cacea;
+}
