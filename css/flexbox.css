@@ -1,8 +1,9 @@
 
-ul {
+.test-list {
   display: flex;
   flex-wrap: wrap;
   flex-flow: row wrap;
+  align-items: center;
 }
 
 /* items now will display inline/float */
@@ -27,10 +28,11 @@ ul {
   /*there are many values the align-items property takes, stretch (which fills up as much of the height of the child) flex-start, flex-end, center (all similar to justify-content), baseline, align-content (does the same as a wrap property for the cross-axis)*/
   
 .test-list li { /* now these items are the flex items and the ul which is the parent element becomes the flex container*/
-  width: 100px;
+  width: 200px;
   height: 100px;
   background-color: #8cacea;
   margin: 8px;
+  flex-basis: 100px;
 }
 
 /*like the flex container there are properties for styling the flex items individually instead of as a collective */
@@ -48,6 +50,8 @@ ul {
 .test-list:nth-child(9) {
         flex-basis: 50px;
     }
+    
+
 /*when using the property flex-basis you can use the values em px and percentage. be mindful that flex basis is set to auto as a default and that is why the flex items grow with the content in the box as opposed to wrapping, with this property you can create a fixed with in a flex item so the content wraps*/
 /*you also have the option to use shorthand css with flex property, it will be grow, shrink and basis so for example flex: 0 1 auto; */
 
@@ -87,4 +91,11 @@ ul {
   background-color: #8cacea;
 }
 
-/* DONT REALLY UNDERSTAND HOW TO USE MARGIN AUTO IN FLEX BOX"
+/* DONT REALLY UNDERSTAND HOW TO USE MARGIN AUTO IN FLEX BOX" */
+
+
+
+
+
+
+
