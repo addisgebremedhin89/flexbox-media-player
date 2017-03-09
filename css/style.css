@@ -1,94 +1,23 @@
-/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-                          RESET
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-
-/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
-  License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-body {
-  line-height: 1;
-}
-ol, ul {
-  list-style: none;
-}
-blockquote, q {
-  quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-                          BODY
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-
-
 html,
-  body {
-    height: 100%; /*setting this explicitly is important*/
-  }
 body {
-    display: flex; /*flex superpowers activated! */
-    flex-direction: column; /*Stack the flex-items (main and footer elements) vertically NOT horizontally*/
-    background-color: #fff;
-    margin: 0;
-    font-family: Lato, sans-serif;
-    color: #222;
-    font-size: 0.9em;
-  }
-  
-main {
-    display: flex; /*I just included this! - now a flex container with flex items: sidebar & main content section*/
-  }
-
-aside {
-    /* ...  */
-    display: flex; /*Now a flex-container too*/
-    flex: 0 0 40px; /*do not grow or shrink. Stay fixed at 40px*/
-    flex-direction: column; /*stack icons vertically*/
-    /*since direction is changed, this works on the vertical direction*/
-    justify-content: space-around;
-    align-items: center; /*direction is changed! This affects the horizontal direction. Places Icons in the center*/
-    background-color: #f2f2f2; /*make me pretty*/
+  height: 100%; /*setting this explicitly is important*/
 }
-
-aside i.fa {
-        font-size: 0.9em;  /*font size for the icons*/
-  }
-  
+body {
+  display: flex; /*flex superpowers activated! */
+  flex-direction: column; /*Stack the flex-items (main and footer elements) vertically NOT horizontally*/
+  background-color: #fff;
+  margin: 0;
+  font-family: Lato, sans-serif;
+  color: #222;
+  font-size: 0.9em;
+}
+main {
+  flex: 1 0 auto; /*fill the available space*/
+  display: flex; /*I just included this! - now a flex container with flex items: sidebar & main content section*/
+}
 footer {
-    flex: 0 0 90px; /*don't grow or shrink - just stay at a height of 90px.*/
-    padding: 10px;
-    color: #fff;
-    background-color: rgba(61, 100, 158, .9);
-  }
+  flex: 0 0 90px; /*don't grow or shrink - just stay at a height of 90px.*/
+  padding: 10px;
+  color: #fff;
+  background-color: rgba(61, 100, 158, .9);
+}
