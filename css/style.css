@@ -127,6 +127,7 @@ li:nth-child(2n) {
   font-size: 0.9em;
   margin: 2px 0;
 }
+
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                           FOOTER
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
@@ -135,5 +136,26 @@ footer {
   flex: 0 0 90px; /*don't grow or shrink - just stay at a height of 90px.*/
   padding: 10px;
   color: #fff;
-  background-color: rgba(61, 100, 158,0.9);
+  background-color: rgba(61, 100, 158, .9);
+display: flex;
+margin: 0px;
+padding: 5px;
+}
+
+/*.catty-footer p {
+  display: flex;
+  margin-left: 20px;
+  margin-top: 15px;
+}*/
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                          RESPONSIVE DESIGN
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media screen and (max-width: 769px) {
+/* code here only applies to screen devices that have a width lesser than 769px*/
+    
+     ul {
+        flex-direction: column; /* On smaller devices, switch the direction*/
+    }
 }
