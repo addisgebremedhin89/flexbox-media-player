@@ -30,6 +30,12 @@ aside i.fa {
   font-size: 0.9em;  /*font size for the icons*/
 }
 
+.content {
+  display: flex;
+  flex: 1 1 auto; /*this makes sure the section grows to fill the entire available space and shrinks too*/
+  flex-direction: column;
+}
+
 footer {
   flex: 0 0 90px; /*don't grow or shrink - just stay at a height of 90px.*/
   padding: 10px;
