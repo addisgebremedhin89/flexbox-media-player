@@ -6,6 +6,7 @@ html,
 body {
   height: 100%; /*setting this explicitly is important*/
 }
+
 body {
   display: flex; /*flex superpowers activated! */
   flex-direction: column; /*Stack the flex-items (main and footer elements) vertically NOT horizontally*/
@@ -59,6 +60,7 @@ aside i.fa {
   padding: 40px;
   background-color: #4e4e4e;
 }
+
 .music-list {
   flex: 1 0 auto;
   list-style-type: none;
@@ -67,12 +69,32 @@ aside i.fa {
 
 li {
   display: flex; /*Paragraphs are now displayed on one line*/
-  padding: 0 20px; /*Some breahing space*/
+  padding: 0 20px; /*Some breathing space*/
   min-height: 50px;
 }
+
 li p {
-  flex: 0 0 25%; /*This is the sweet sauce*/
+  flex: 0 0 25%; /*This is the sweet sauce “Don’t grow or shrink but each paragraph should take up 25% of the available space”.*/
 }
+
+.first-section {
+  flex: 0 0 60%;
+}
+
+.second-section {
+  flex: 0 0 40%;
+}
+
+li span.catty-cloud {
+  border: 1px solid black;
+  font-size: 0.6em;
+  padding: 3px;
+}
+
+li:nth-child(2n) {
+  background-color: #f2f2f2;
+}
+
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                           FOOTER
