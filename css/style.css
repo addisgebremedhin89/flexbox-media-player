@@ -152,10 +152,11 @@ padding: 5px;
                           RESPONSIVE DESIGN
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 300x) {
 /* code here only applies to screen devices that have a width lesser than 769px*/
     
-     ul {
+     aside {
         flex-direction: column; /* On smaller devices, switch the direction*/
+        /*basically “For a screen device with a maximum width of 300px … do this and that ”
     }
 }
