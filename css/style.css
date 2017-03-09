@@ -1,3 +1,7 @@
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                          VIEWSPACE
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
 html,
 body {
   height: 100%; /*setting this explicitly is important*/
@@ -11,10 +15,19 @@ body {
   color: #222;
   font-size: 0.9em;
 }
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                          MAIN SECTION OF APP
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
 main {
   flex: 1 0 auto; /*is a flex item*/
   display: flex; /*I just included this! - now a flex container with flex items: sidebar & main content section*/
 }
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                          SIDEBAR
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 aside {
   flex: 0 0 40px; /*do not grow or shrink. Stay fixed at 40px*/
@@ -30,11 +43,31 @@ aside i.fa {
   font-size: 0.9em;  /*font size for the icons*/
 }
 
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                          MAIN SECTION
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
 .content {
   display: flex;
   flex: 1 1 auto; /*this makes sure the section grows to fill the entire available space and shrinks too*/
   flex-direction: column;
 }
+
+.music-head {
+  flex: 0 0 280px; /*Same memo, don't grow or shrink - stay at 280px*/
+  display: flex;
+  padding: 40px;
+  background-color: #4e4e4e;
+}
+.music-list {
+  flex: 1 0 auto;
+  list-style-type: none;
+  padding: 5px 10px 0px;
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                          FOOTER
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 footer {
   flex: 0 0 90px; /*don't grow or shrink - just stay at a height of 90px.*/
